@@ -408,11 +408,23 @@ img {
   padding: 5rem 0;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
 }
 .application-section .image {
   background-image: url(../../../build/img/barber.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+}
+.application-section .app {
+  background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  padding: 2rem 3rem;
+}
+.application-section .app img {
+  display: block;
+  margin: auto;
 }

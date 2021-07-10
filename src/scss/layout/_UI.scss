@@ -2,11 +2,23 @@
     padding: $medium 0;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     .image {
         background-image: url(../../../build/img/barber.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        border-top-left-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+    }
+    .app {
+        background: $cBgWithe;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        padding: 2rem $small;
+        img {
+            display: block;
+            margin: auto;
+        }
     }
 }
