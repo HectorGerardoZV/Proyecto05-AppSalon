@@ -1,0 +1,12 @@
+.application-section {
+    padding: $medium 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .image {
+        background-image: url(../../../build/img/barber.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

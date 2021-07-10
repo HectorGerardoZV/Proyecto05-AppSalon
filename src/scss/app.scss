@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;800&display=swap');
+//Base
 @import "base/normalize";
 @import "base/variables";
 @import "base/globals";
 @import "base/tools";
+//Layout
+@import "layout/UI";

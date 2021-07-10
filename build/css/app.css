@@ -400,7 +400,19 @@ img {
 }
 
 .container-big {
-  max-width: 180rem;
-  width: 90%;
+  max-width: 90%;
   margin: 0 auto;
+}
+
+.application-section {
+  padding: 5rem 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.application-section .image {
+  background-image: url(../../../build/img/barber.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
