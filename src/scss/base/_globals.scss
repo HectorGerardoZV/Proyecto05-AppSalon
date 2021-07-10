@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    background: $cBgGradient;
 }
 
 *,
@@ -12,7 +13,6 @@ html {
 body {
     font-size: 16px;
     font-family: $fMain;
-    background: $cBgGradient;
 }
 
 h1,

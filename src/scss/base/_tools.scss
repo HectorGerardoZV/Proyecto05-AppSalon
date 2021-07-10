@@ -12,6 +12,12 @@
 }
 
 .container-big {
-    max-width: 90%;
+    max-width: 170rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-max {
+    max-width: 95%;
     margin: 0 auto;
 }

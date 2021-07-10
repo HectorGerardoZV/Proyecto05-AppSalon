@@ -341,6 +341,7 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  background: linear-gradient(90deg, #2B6F76 0%, #4E4376 100%);
 }
 
 *,
@@ -352,7 +353,6 @@ html {
 body {
   font-size: 16px;
   font-family: "Sarabun", sans-serif;
-  background: linear-gradient(90deg, #2B6F76 0%, #4E4376 100%);
 }
 
 h1,
@@ -400,7 +400,13 @@ img {
 }
 
 .container-big {
-  max-width: 90%;
+  max-width: 170rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-max {
+  max-width: 95%;
   margin: 0 auto;
 }
 
