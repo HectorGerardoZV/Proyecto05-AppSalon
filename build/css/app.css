@@ -387,6 +387,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+}
+
 .container-small {
   max-width: 100rem;
   width: 70%;
@@ -433,4 +437,20 @@ img {
 .application-section .app img {
   display: block;
   margin: auto;
+}
+
+.tabs {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+.tabs button {
+  cursor: pointer;
+}
+
+.button {
+  padding: 1rem 5rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  color: #ffff;
 }

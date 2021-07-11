@@ -1,0 +1,15 @@
+.tabs {
+    margin-top: $big;
+    display: flex;
+    justify-content: space-around;
+    button {
+        cursor: pointer;
+    }
+}
+
+.button {
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    background: $cBlue;
+    color: $cWithe;
+}
