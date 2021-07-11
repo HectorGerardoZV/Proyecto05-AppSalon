@@ -441,6 +441,9 @@ button {
 .application-section .app .slogan {
   margin-top: 7rem;
 }
+.application-section .app .hide-section {
+  display: none;
+}
 
 .tabs {
   margin-top: 7rem;
@@ -472,7 +475,7 @@ button {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
+  gap: 3rem;
 }
 .services .service {
   cursor: pointer;
@@ -488,4 +491,7 @@ button {
 }
 .services .service p:last-of-type {
   font-weight: 600;
+}
+.services .service.selected {
+  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
 }

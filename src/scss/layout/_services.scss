@@ -12,7 +12,7 @@
     margin-top: $small;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: $medium;
+    gap: $small;
     .service {
         cursor: pointer;
         background: $cSilver;
@@ -26,6 +26,9 @@
             &:last-of-type {
                 font-weight: $fw600;
             }
+        }
+        &.selected {
+            background: $cBlue;
         }
     }
 }
