@@ -1,5 +1,5 @@
 .section__services {
-    margin-top: 3rem;
+    margin-top: $small;
     h2 {
         text-align: center;
         background: $cSilver;
@@ -9,12 +9,18 @@
 }
 
 .services {
+    margin-top: $small;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: $medium;
     .service {
         background: $cSilver;
-        padding: 2rem 0;
+        padding: 2.5rem 0;
         text-align: center;
+        border-radius: 1rem;
+        p {
+            color: $cWithe;
+            font-size: 2rem;
+        }
     }
 }

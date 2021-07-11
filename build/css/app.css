@@ -449,9 +449,9 @@ button {
 }
 
 .button {
-  padding: 1rem 5rem;
+  padding: 1.5rem 5rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  background: linear-gradient(90deg, #868F96 0%, #596164 100%);
   color: #ffff;
 }
 
@@ -466,12 +466,18 @@ button {
 }
 
 .services {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
 .services .service {
   background: linear-gradient(90deg, #868F96 0%, #596164 100%);
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   text-align: center;
+  border-radius: 1rem;
+}
+.services .service p {
+  color: #ffff;
+  font-size: 2rem;
 }
