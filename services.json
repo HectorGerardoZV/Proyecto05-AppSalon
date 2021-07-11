@@ -1,0 +1,48 @@
+{
+    "services": [{
+            "id": 1,
+            "name": "Pompadour",
+            "cost": 50
+        },
+        {
+            "id": 2,
+            "name": "Low-Tape",
+            "cost": 70
+        },
+        {
+            "id": 3,
+            "name": "Hight-Tape",
+            "cost": 85
+        },
+        {
+            "id": 4,
+            "name": "Moicano",
+            "cost": 100
+        },
+        {
+            "id": 5,
+            "name": "Sindral-Tape",
+            "cost": 60
+        },
+        {
+            "id": 6,
+            "name": "Quiff",
+            "cost": 50
+        },
+        {
+            "id": 7,
+            "name": "Fade",
+            "cost": 90
+        },
+        {
+            "id": 8,
+            "name": "Skipy",
+            "cost": 90
+        },
+        {
+            "id": 9,
+            "name": "Undercut",
+            "cost": 80
+        }
+    ]
+}
