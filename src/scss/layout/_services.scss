@@ -1,11 +1,17 @@
 .section__services {
     margin-top: 3rem;
+    h2 {
+        text-align: center;
+        background: $cSilver;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: $medium;
     .service {
         background: $cSilver;
         padding: 2rem 0;
