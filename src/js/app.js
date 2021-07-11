@@ -1,14 +1,51 @@
 let section = 1;
-let content;
+const package = {
+    name: "",
+    cost: "",
+    client: "",
+    date: "",
+    time: ""
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-    startApp();
+document.addEventListener("DOMContentLoaded", function() {
+    insertServices();
+    events();
 });
 
 function startApp() {
     events();
 
 }
+
+async function insertServices() {
+    try {
+        const sectionServices = document.querySelector(".services");
+        const result = await fetch("../../services.json");
+        const data = await result.json();
+        const { services } = data;
+        services.forEach(value => {
+            const { id, name, cost } = value;
+            //Creation
+            const service = document.createElement("DIV");
+            const nameService = document.createElement("P");
+            const costService = document.createElement("P");
+            //Asignation
+            service.dataset.idService = id;
+            nameService.textContent = name;
+            costService.textContent = `$ ${cost}`;
+            service.appendChild(nameService);
+            service.appendChild(costService);
+            service.classList.add("service");
+            sectionServices.appendChild(service);
+
+        });
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 
 function events() {
     const tabs = document.querySelectorAll(".tabs button");
@@ -23,13 +60,19 @@ function events() {
 function insertSection(e) {
     const newSection = parseInt(e.target.dataset.section);
     if (newSection == 1) {
-        console.log("Estamos en la section 1");
+        section = 1;
+
     }
     if (newSection == 2) {
-        console.log("Estamos en la section 2");
+        section = 2;
+
+
     }
     if (newSection == 3) {
-        console.log("Estamos en la section 3");
+        section = 3;
+
     }
+
+
 
 }

@@ -1,0 +1,14 @@
+.section__services {
+    margin-top: 3rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    .service {
+        background: $cSilver;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
