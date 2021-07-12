@@ -1,0 +1,9 @@
+.section__summary {
+    h2 {
+        text-align: center;
+        margin-top: $small;
+        background: $cSilver;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
