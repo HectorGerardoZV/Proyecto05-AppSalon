@@ -495,3 +495,13 @@ button {
 .services .service.selected {
   background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
 }
+
+.section__appointment {
+  margin-top: 3rem;
+}
+.section__appointment h2 {
+  text-align: center;
+  background: linear-gradient(90deg, #868F96 0%, #596164 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

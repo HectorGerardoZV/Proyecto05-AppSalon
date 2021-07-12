@@ -1,0 +1,9 @@
+.section__appointment {
+    margin-top: $small;
+    h2 {
+        text-align: center;
+        background: $cSilver;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
