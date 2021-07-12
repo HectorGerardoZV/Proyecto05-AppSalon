@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function startApp() {
     tabs();
+    addAppointment();
 }
+
 
 
 

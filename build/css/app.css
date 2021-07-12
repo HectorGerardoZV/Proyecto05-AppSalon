@@ -505,3 +505,43 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.appointment {
+  width: 90%;
+  margin-top: 3rem;
+}
+.appointment .appointment-information {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.appointment .appointment-information label {
+  flex: 0 0 10rem;
+  padding-left: 3rem;
+  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  font-weight: 800;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.appointment .appointment-information input {
+  flex: 1;
+  border: none;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border: 5px solid;
+  border-radius: 1rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+}
+
+.alert {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  background: crimson;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+}
