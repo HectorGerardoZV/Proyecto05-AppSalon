@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function startApp() {
     tabs();
     addAppointment();
+
 }
 
 
@@ -45,7 +46,6 @@ async function insertServices() {
         console.log(error);
     }
 }
-
 
 
 function tabs() {

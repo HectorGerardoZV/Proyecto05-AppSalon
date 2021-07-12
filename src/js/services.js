@@ -21,7 +21,6 @@ function servicesEvent(e) {
 
     }
 
-    console.log(package.services);
 
 }
 
