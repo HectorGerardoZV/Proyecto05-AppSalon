@@ -7,3 +7,16 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+.message {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background: crimson;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
