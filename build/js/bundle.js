@@ -293,36 +293,40 @@ function addSectionServices() {
     const servicesLabel = document.createElement("H3");
     servicesLabel.textContent = "Services";
     const servicesSection = document.createElement("DIV");
+    servicesSection.classList.add("services__section");
 
 
     const { services } = package;
 
     services.forEach(service => {
-        const clientContent = document.createElement("DIV");
-        clientContent.classList.add("services__section");
+        const contentServices = document.createElement("DIV");
+        contentServices.classList.add("contentServices");
         //Service
+        const nameServiceDiv = document.createElement("DIV");
+        nameServiceDiv.classList.add("nameService__content");
         const nameServiceLabel = document.createElement("P");
         nameServiceLabel.textContent = "Service:";
         const nameServiceContent = document.createElement("P");
         nameServiceContent.textContent = service.nombre;
+        nameServiceDiv.appendChild(nameServiceLabel);
+        nameServiceDiv.appendChild(nameServiceContent);
         //Cost
+        const costServiceDiv = document.createElement("DIV");
+        costServiceDiv.classList.add("costService__content");
         const costServiceLabel = document.createElement("P");
         costServiceLabel.textContent = "Cost:";
         const costServiceContent = document.createElement("P");
         costServiceContent.textContent = service.precio;
+        costServiceDiv.appendChild(costServiceLabel);
+        costServiceDiv.appendChild(costServiceContent);
+        //Inyection
+        contentServices.appendChild(nameServiceDiv);
+        contentServices.appendChild(costServiceDiv);
 
-
-
-        clientContent.appendChild(nameServiceLabel);
-        clientContent.appendChild(nameServiceContent);
-        clientContent.appendChild(costServiceLabel);
-        clientContent.appendChild(costServiceContent);
-
-
-        servicesSection.appendChild(clientContent);
+        servicesSection.appendChild(contentServices);
 
     });
-
+    section.appendChild(servicesLabel);
     section.appendChild(servicesSection);
 
 

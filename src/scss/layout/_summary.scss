@@ -28,7 +28,7 @@
                 align-items: center;
                 p {
                     &:first-of-type {
-                        width: 10%;
+                        width: 15%;
                         background: $cBlue;
                         font-size: 2rem;
                         -webkit-background-clip: text;
@@ -46,6 +46,41 @@
                 margin-bottom: 3rem;
                 &:last-of-type {
                     margin: 0;
+                }
+            }
+        }
+        
+        .services__section {
+            width: 70%;
+            height: 30rem;
+            margin: 0 auto;
+            padding: 1rem;
+            border: 5px solid #1E3C72;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            .contentServices {
+                margin-bottom: 2rem;
+            }
+            .nameService__content,
+            .costService__content {
+                display: flex;
+                width: 100%;
+                p {
+                    &:first-of-type {
+                        width: 15%;
+                        background: $cBlue;
+                        font-size: 2rem;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: $fw800;
+                    }
+                    &:last-of-type {
+                        background: $cSilver;
+                        font-size: 2rem;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: $fw800;
+                    }
                 }
             }
         }

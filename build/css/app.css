@@ -576,7 +576,7 @@ button {
   margin-bottom: 3rem;
 }
 .client__section .client__content p:first-of-type {
-  width: 10%;
+  width: 15%;
   background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
   font-size: 2rem;
   -webkit-background-clip: text;
@@ -592,6 +592,41 @@ button {
 }
 .client__section .client__content:last-of-type {
   margin: 0;
+}
+
+.services__section {
+  width: 70%;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 5px solid #1E3C72;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.services__section .contentServices {
+  margin-bottom: 2rem;
+}
+.services__section .nameService__content,
+.services__section .costService__content {
+  display: flex;
+  width: 100%;
+}
+.services__section .nameService__content p:first-of-type,
+.services__section .costService__content p:first-of-type {
+  width: 15%;
+  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+.services__section .nameService__content p:last-of-type,
+.services__section .costService__content p:last-of-type {
+  background: linear-gradient(90deg, #868F96 0%, #596164 100%);
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
 
 .message {
