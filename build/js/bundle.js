@@ -216,7 +216,7 @@ function showSummary() {
     package.time = time.value;
     const section = document.querySelector(".section__summary");
 
-    if (client.value == 0 || date.value == 0 ||
+    if (client.value.length < 3 || date.value == 0 ||
         time.value == 0 || services.length == 0) {
         const exist = document.querySelector(".message");
 
@@ -229,7 +229,7 @@ function showSummary() {
         message.classList.add("message");
         section.appendChild(message);
 
-
+        //Deleting the section client
         const existSectionClient = document.querySelector(".client__section");
         const existTitleClient = document.querySelector(".title-section");
         if (existSectionClient) {
@@ -237,6 +237,7 @@ function showSummary() {
             existTitleClient.remove();
 
         }
+        //Deleting the section services
         const existSectionServices = document.querySelector(".services__section");
         const existTitleServices = document.querySelector(".title-section");
         if (existSectionServices) {
@@ -244,6 +245,13 @@ function showSummary() {
             existTitleServices.remove();
         }
 
+        //Deleting the labels total
+        const existTotalLabel = document.querySelector(".total-label");
+        const existTotalContent = document.querySelector(".total-content");
+        if (existTotalLabel) {
+            existTotalLabel.remove();
+            existTotalContent.remove();
+        }
 
     } else {
         const exist = document.querySelector(".message");
@@ -363,6 +371,32 @@ function addSectionServices() {
     });
     section.appendChild(servicesLabel);
     section.appendChild(servicesSection);
+    addTotal();
 
 
+}
+
+function addTotal() {
+    const { services } = package;
+    let total = 0;
+    services.forEach(service => {
+        const aux = service.precio.split(" ");
+        total += parseInt(aux[1]);
+    });
+
+    const servicesSection = document.querySelector(".section__summary");
+    const totalLabel = document.createElement("H3");
+    totalLabel.classList.add("total-label");
+    totalLabel.textContent = "Total";
+    const totalContent = document.createElement("P");
+    totalContent.classList.add("total-content");
+    totalContent.textContent = `$ ${total}`;
+    const existTotalLabel = document.querySelector(".total-label");
+    const existTotalContent = document.querySelector(".total-content");
+    if (existTotalLabel) {
+        existTotalLabel.remove();
+        existTotalContent.remove();
+    }
+    servicesSection.appendChild(totalLabel);
+    servicesSection.appendChild(totalContent);
 }

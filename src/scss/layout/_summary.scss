@@ -102,3 +102,13 @@
             font-size: 2rem;
             border-radius: 1rem;
         }
+        
+        .total-content {
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: $fw800;
+            background: $cSilver;
+            font-size: 2rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }

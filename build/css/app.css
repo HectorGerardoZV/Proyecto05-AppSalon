@@ -646,3 +646,13 @@ button {
   font-size: 2rem;
   border-radius: 1rem;
 }
+
+.total-content {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #868F96 0%, #596164 100%);
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
