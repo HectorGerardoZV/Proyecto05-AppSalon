@@ -223,10 +223,28 @@ function showSummary() {
         if (exist) {
             exist.remove();
         }
+
         const message = document.createElement("DIV");
         message.textContent = "Please chose or select the inputs";
         message.classList.add("message");
         section.appendChild(message);
+
+
+        const existSectionClient = document.querySelector(".client__section");
+        const existTitleClient = document.querySelector(".title-section");
+        if (existSectionClient) {
+            existSectionClient.remove();
+            existTitleClient.remove();
+
+        }
+        const existSectionServices = document.querySelector(".services__section");
+        const existTitleServices = document.querySelector(".title-section");
+        if (existSectionServices) {
+            existSectionServices.remove();
+            existTitleServices.remove();
+        }
+
+
     } else {
         const exist = document.querySelector(".message");
         if (exist) {
@@ -243,10 +261,18 @@ function addSectionClient() {
     const section = document.querySelector(".section__summary");
 
     const clientLabel = document.createElement("H3");
+    clientLabel.classList.add("title-section");
     clientLabel.textContent = "Client";
 
     const clientSection = document.createElement("DIV");
     clientSection.classList.add("client__section");
+
+    const exist = document.querySelector(".client__section");
+    const existTitle = document.querySelector(".title-section");
+    if (exist) {
+        exist.remove();
+        existTitle.remove();
+    }
     //Labels
     const clientNameLabel = document.createElement("P");
     clientNameLabel.textContent = "Name:";
@@ -291,11 +317,20 @@ function addSectionServices() {
     const section = document.querySelector(".section__summary");
 
     const servicesLabel = document.createElement("H3");
+    servicesLabel.classList.add("title-section");
     servicesLabel.textContent = "Services";
+
     const servicesSection = document.createElement("DIV");
     servicesSection.classList.add("services__section");
 
 
+    const exist = document.querySelector(".services__section");
+    const existTitle = document.querySelector(".title-section");
+    if (exist) {
+        exist.remove();
+        existTitle.remove();
+
+    }
     const { services } = package;
 
     services.forEach(service => {

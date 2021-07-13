@@ -415,7 +415,7 @@ button {
 }
 
 .application-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
   height: 100vh;
   display: grid;
   grid-template-columns: 40% 60%;
