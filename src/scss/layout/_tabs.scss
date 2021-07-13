@@ -12,4 +12,7 @@
     border-radius: 1rem;
     background: $cSilver;
     color: $cWithe;
+    &.select-section {
+        background: $cBlue;
+    }
 }

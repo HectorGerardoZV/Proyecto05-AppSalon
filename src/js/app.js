@@ -66,23 +66,40 @@ function insertSection(e) {
     const servicesSection = document.querySelector(".section__services");
     const apointmentSection = document.querySelector(".section__appointment");
     const summarySection = document.querySelector(".section__summary");
+
+    const servicesButton = document.querySelector("#services");
+    const appointmentButton = document.querySelector("#appointment");
+    const summaryButton = document.querySelector("#summary");
+
     if (newSection == 1) {
         section = 1;
         servicesSection.classList.remove("hide-section");
         apointmentSection.classList.add("hide-section");
         summarySection.classList.add("hide-section");
+
+        servicesButton.classList.add("select-section");
+        appointmentButton.classList.remove("select-section");
+        summaryButton.classList.remove("select-section");
     }
     if (newSection == 2) {
         section = 2;
         servicesSection.classList.add("hide-section");
         apointmentSection.classList.remove("hide-section");
         summarySection.classList.add("hide-section");
+
+        servicesButton.classList.remove("select-section");
+        appointmentButton.classList.add("select-section");
+        summaryButton.classList.remove("select-section");
     }
     if (newSection == 3) {
         section = 3;
         servicesSection.classList.add("hide-section");
         apointmentSection.classList.add("hide-section");
         summarySection.classList.remove("hide-section");
+
+        servicesButton.classList.remove("select-section");
+        appointmentButton.classList.remove("select-section");
+        summaryButton.classList.add("select-section");
     }
 
 }
