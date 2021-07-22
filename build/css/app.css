@@ -476,6 +476,9 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  height: 40rem;
+  overflow: hidden;
+  overflow: scroll;
 }
 .services .service {
   cursor: pointer;

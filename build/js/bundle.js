@@ -24,10 +24,11 @@ function startApp() {
 async function insertServices() {
     try {
         const sectionServices = document.querySelector(".services");
-        const result = await fetch("../../services.json");
+        const url = "http://localhost:3000/services.php";
+        const result = await fetch(url);
         const data = await result.json();
-        const { services } = data;
-        services.forEach(value => {
+
+        data.forEach(value => {
             const { id, name, cost } = value;
             //Creation
             const service = document.createElement("DIV");

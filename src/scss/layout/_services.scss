@@ -13,6 +13,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: $small;
+    height: 40rem;
+    overflow: hidden;
+    overflow: scroll;
     .service {
         cursor: pointer;
         background: $cSilver;
