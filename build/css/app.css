@@ -420,6 +420,11 @@ button {
   display: grid;
   grid-template-columns: 40% 60%;
 }
+@media (max-width: 1100px) {
+  .application-section {
+    grid: none;
+  }
+}
 .application-section .image {
   background-image: url(../../../build/img/barber.jpg);
   background-position: center center;
@@ -427,6 +432,11 @@ button {
   background-repeat: no-repeat;
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
+}
+@media (max-width: 1100px) {
+  .application-section .image {
+    display: none;
+  }
 }
 .application-section .app {
   background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
@@ -441,11 +451,18 @@ button {
 .application-section .app .hide-section {
   display: none;
 }
+@media (max-width: 1100px) {
+  .application-section .app {
+    border-radius: 2.5rem;
+  }
+}
 
 .tabs {
+  max-width: 100%;
   margin-top: 7rem;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
 }
 .tabs button {
   cursor: pointer;

@@ -3,6 +3,9 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 40% 60%;
+    @include mq(1100px) {
+        grid: none;
+    }
     .image {
         background-image: url(../../../build/img/barber.jpg);
         background-position: center center;
@@ -10,6 +13,9 @@
         background-repeat: no-repeat;
         border-top-left-radius: 2.5rem;
         border-bottom-left-radius: 2.5rem;
+        @include mq(1100px) {
+            display: none;
+        }
     }
     .app {
         background: $cBgWithe;
@@ -22,6 +28,9 @@
         }
         .hide-section {
             display: none;
+        }
+        @include mq(1100px) {
+            border-radius: 2.5rem
         }
     }
 }
