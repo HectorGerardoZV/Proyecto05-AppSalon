@@ -29,8 +29,11 @@
         .hide-section {
             display: none;
         }
-        @include mq(1100px) {
-            border-radius: 2.5rem
+        @include mq(1000px) {
+            border-radius: 2.5rem;
+            max-width: 100rem;
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }
