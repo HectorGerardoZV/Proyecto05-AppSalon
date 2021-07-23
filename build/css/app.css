@@ -684,3 +684,74 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.login-position {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.login-position .login {
+  width: 50rem;
+  height: 70rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+.login-position .login .logo-section {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.login__inputs {
+  margin-top: 8rem;
+}
+.login__inputs .login-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.login__inputs .login-section input {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1rem;
+  border: 3px solid #1E3C72;
+  color: #1E3C72;
+  font-weight: bold;
+}
+.login__inputs .login-section input::placeholder {
+  color: #1E3C72;
+  font-weight: normal;
+}
+.login__inputs .login-section label {
+  text-align: center;
+  color: #1E3C72;
+  font-weight: bold;
+}
+.login__inputs .button-submit {
+  width: 100%;
+  display: flex;
+}
+.login__inputs .button-submit button {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.button-style {
+  padding: 2rem 0;
+  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-style:hover {
+  box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+}
