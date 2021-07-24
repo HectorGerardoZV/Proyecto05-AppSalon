@@ -9,6 +9,7 @@ const package = {
 document.addEventListener("DOMContentLoaded", function() {
     insertServices();
     startApp();
+
 });
 
 function startApp() {
