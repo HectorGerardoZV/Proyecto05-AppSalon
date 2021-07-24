@@ -12,9 +12,29 @@ function logIn() {
         const data = require();
         data.then(result => {
             if (userName === result.userName && password == result.password) {
-                window.location.href = 'index.html';
+                const log = document.querySelector(".login");
+                const error = document.createElement("DIV");
+                error.classList.add("acepted-login");
+                error.textContent = "Good";
+                log.appendChild(error);
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000)
             } else {
-                console.log("No");
+                const error_exist = document.querySelector(".error-login");
+                if (!error_exist) {
+                    const log = document.querySelector(".login");
+                    const error = document.createElement("DIV");
+                    error.classList.add("error-login");
+                    error.textContent = "Error with user or password";
+                    log.appendChild(error);
+                    setTimeout(() => {
+                        error.remove();
+                    }, 3000)
+                }
+
+
+
             }
         })
     });
